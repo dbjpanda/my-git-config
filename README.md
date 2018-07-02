@@ -10,6 +10,7 @@ git config --global core.excludesfile ~/.gitignore_global
 # .Gitconfig
 
 Checkout a pr in your local
+
 git pr PR NO
 
 git pr-clean BRANCH_NAME 
