@@ -9,4 +9,5 @@ git config --global core.excludesfile ~/.gitignore_global
 
 # .Gitconfig
 git pr <PR NO>
+
 git pr-clean <branch>
