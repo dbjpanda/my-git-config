@@ -23,4 +23,4 @@ git add-commit "your messages"
 `````````
 Apply a patch from an URL. 
 ````````
-git apply-url http://blah.com/issue.patch OPTIONAL_GIT_APPLY_ARGS
+git apply-url http://blah.com/issue.patch OPTIONAL_GIT_APPLY_ARGS [ https://git-scm.com/docs/git-apply ]
