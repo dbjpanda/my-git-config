@@ -11,18 +11,5 @@
 [alias]
 	pr = "!f() { git fetch -fu ${2:-origin} refs/pull/$1/head:pr/$1 && git checkout pr/$1; }; f"
 	pr-clean = "!f() { git checkout $1 && git for-each-ref refs/heads/pr/* --format=\"%(refname)\" | while read ref ; do branch=${ref#refs/heads/} ; git branch -D $branch ; done }; f"
-	[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-[user]
-	name = dbjpanda
-	email = dbjpanda@live.com
-[core]
-	excludesfile = /Users/dibyajyoti/.gitignore_global
-[alias]
-	pr = "!f() { git fetch -fu ${2:-origin} refs/pull/$1/head:pr/$1 && git checkout pr/$1; }; f"
-	pr-clean = "!f() { git checkout $1 && git for-each-ref refs/heads/pr/* --format=\"%(refname)\" | while read ref ; do branch=${ref#refs/heads/} ; git branch -D $branch ; done }; f"
 	add-commit = !git add -A && git commit -m
         apply-url = "!f() { curl -s $1 2>nul | git apply ${@:2}; }; f"
