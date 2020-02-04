@@ -1,13 +1,22 @@
-# Global gitignore
+# Configure gitignore globally
 
+```
 cd ~
 
 wget https://raw.githubusercontent.com/dbjpanda/global-gitignore/master/.gitignore_global
 
 git config --global core.excludesfile ~/.gitignore_global
+```
 
+# Configure gitconfig
 
-# Available Aliases in .Gitconfig
+```
+cd ~
+Edit your existing .gitconfig or directly download this file
+wget https://raw.githubusercontent.com/dbjpanda/global-gitignore/master/.gitconfig
+```
+
+# Available Aliases in .gitconfig
 
 Create a temp branch and apply the PR to that branch
 `````
